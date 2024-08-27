@@ -16,12 +16,6 @@ Simply create a markdown code block with the language set to `annotated-hexdump`
 - `/missing ?` will replace missing bytes with `??`. Defaults to whitespace.
 - `/note /0 Header bytes` will place the note `Header bytes` after the hexdump, highlighted with color 0.
 
-## Release Notes
-
-### 1.0.0
-
-Initial release of md-annotated-hexdumps.
-
 ## Contributing
 
 ### Manual release process
