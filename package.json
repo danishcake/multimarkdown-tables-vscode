@@ -49,6 +49,7 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^10.1.7",
     "@semantic-release/release-notes-generator": "^14.0.1",
+    "@stylistic/eslint-plugin": "^2.6.4",
     "@types/markdown-it": "^14.1.2",
     "@types/mocha": "^10.0.7",
     "@types/node": "22.x",
