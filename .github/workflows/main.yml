@@ -39,6 +39,7 @@ jobs:
       github.ref == 'refs/heads/main' &&
       github.event.repository.fork == false
     runs-on: ubuntu-latest
+    environment: Release
     permissions:
       contents: write
       issues: write
@@ -57,7 +58,7 @@ jobs:
         run: npm install -g @vscode/vsce
       - name: Build
         run: npm run package
-      - name: Release 🎉
+      - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
