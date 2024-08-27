@@ -14,3 +14,4 @@ vsc-extension-quickstart.md
 **/.vscode-test.*
 release.config.cjs
 .github/**
+CHANGELOG.md
