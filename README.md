@@ -24,10 +24,26 @@ Initial release of md-annotated-hexdumps.
 
 ## Contributing
 
-- To build:
+### Manual release process
+
+This process should not be required, as we automatically publish updates using github actions
 
 ```bash
 npm ci
 npm install -g @vscode/vsce
 vsce package
 ```
+
+### Automated release process
+
+The automated release process can be run locally using:
+
+```bash
+export VSCE_PAT=...
+export GITHUB_TOKEN=...
+npm ci
+npm run package
+npx semantic-release --dry-run
+```
+
+Note that the Azure Devops token in VSCE_PAT is fairly short lived, and will need to be periodically refreshed.
