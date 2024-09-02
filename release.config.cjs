@@ -8,10 +8,10 @@ module.exports = {
         releaseRules: [
           {
             type: "chore",
-            scope: "marked-annotated-hexdump",
-            release: "patch",
+            scope: "deps",
+            subject: "*marked-annotated-hexdump*",
+            release: "minor",
           },
-          { type: "chore", scope: "*", release: false },
         ],
         parserOpts: {
           noteKeywords: ["BREAKING CHANGE", "BREAKING CHANGES"],
