@@ -16,28 +16,6 @@ Simply create a markdown code block with the language set to `annotated-hexdump`
 - `/missing ?` will replace missing bytes with `??`. Defaults to whitespace.
 - `/note /0 Header bytes` will place the note `Header bytes` after the hexdump, highlighted with color 0.
 
-## Contributing
+More documentation of the syntax is provided at [marked-annotated-hexdump](https://www.npmjs.com/package/marked-annotated-hexdump).
 
-### Manual release process
-
-This process should not be required, as we automatically publish updates using github actions
-
-```bash
-npm ci
-npm install -g @vscode/vsce
-vsce package
-```
-
-### Automated release process
-
-The automated release process can be run locally using:
-
-```bash
-export VSCE_PAT=...
-export GITHUB_TOKEN=...
-npm ci
-npm run package
-npx semantic-release --dry-run
-```
-
-Note that the Azure Devops token in VSCE_PAT is fairly short lived, and will need to be periodically refreshed.
+You can use the [playground](https://danishcake.github.io/marked-annotated-hexdump/markdown-it/) to play with the syntax without installing anything.
