@@ -25,6 +25,12 @@ module.exports = {
         changelogFile: "CHANGELOG.md",
       },
     ],
+    [
+      "@semantic-release/npm",
+      // Skip token verification
+      // This is because we just use this package to update the package.json version
+      { verifyConditions: false },
+    ],
     "@semantic-release/git",
     [
       "semantic-release-vsce",
