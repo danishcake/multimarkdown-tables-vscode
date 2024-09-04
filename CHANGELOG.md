@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/danishcake/md-annotated-hexdumps-vscode/compare/v1.1.0...v1.2.0) (2024-09-04)
+
+
+### Bug Fixes
+
+* Cause semantic-release to manage the version in package.json ([6449b58](https://github.com/danishcake/md-annotated-hexdumps-vscode/commit/6449b5867bbb2cdda0449a3549f8365d151d32bf))
+
+
+### Features
+
+* Update to markdown-annotated-hexdump 1.3 ([0ebdd82](https://github.com/danishcake/md-annotated-hexdumps-vscode/commit/0ebdd8256e1e74635417b17dc919c183f53732a4))
+
 # [1.1.0](https://github.com/danishcake/md-annotated-hexdumps-vscode/compare/v1.0.2...v1.1.0) (2024-09-02)
 
 
