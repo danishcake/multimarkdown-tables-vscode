@@ -1,19 +1,18 @@
 {
-  "name": "md-annotated-hexdumps",
-  "displayName": "Markdown annotated-hexdumps",
-  "description": "Adds previews for annotated hexdumps ",
-  "version": "1.2.0",
+  "name": "multimarkdown-tables-vsc",
+  "displayName": "Multimarkdown tables for VSCode",
+  "description": "Adds previews for Multimarkdown tables",
+  "version": "1.0.0",
   "publisher": "EdwardWoolhouse",
   "license": "MIT",
   "keywords": [
     "markdown",
-    "hexdump",
-    "hexdumps",
-    "hex"
+    "tables",
+    "multimarkdown"
   ],
   "private": true,
   "repository": {
-    "url": "https://github.com/danishcake/md-annotated-hexdumps-vscode"
+    "url": "https://github.com/danishcake/multimarkdown-tables-vscode"
   },
   "extensionKind": [
     "ui"
@@ -28,7 +27,37 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
-    "markdown.markdownItPlugins": true
+    "markdown.markdownItPlugins": true,
+    "configuration": {
+      "title": "Multimarkdown Tables",
+      "properties": {
+        "multimarkdownTables.autolabel": {
+          "type": "boolean",
+          "default": false,
+          "description": "If true, tables will be given an element id derived from the table caption"
+        },
+        "multimarkdownTables.headerless": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enables creation of headerless tables by omitting the header row"
+        },
+        "multimarkdownTables.multibody": {
+          "type": "boolean",
+          "default": false,
+          "description": "If true, a blank line dividing tables declares a second body rather than a new table"
+        },
+        "multimarkdownTables.multiline": {
+          "type": "boolean",
+          "default": true,
+          "description": "If true, table rows can be declared over multiple lines by adding a trailing '\\'"
+        },
+        "multimarkdownTables.rowspan": {
+          "type": "boolean",
+          "default": true,
+          "description": "If true, a cell can be merged into the cell above by starting it with |^^"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
@@ -69,6 +98,6 @@
     "typescript": "^5.6.2"
   },
   "dependencies": {
-    "marked-annotated-hexdump": "^1.3.1"
+    "markdown-it-multimd-table": "^4.2.3"
   }
 }
