@@ -1,23 +1,7 @@
 module.exports = {
   branches: "main",
   plugins: [
-    [
-      "@semantic-release/commit-analyzer",
-      {
-        preset: "angular",
-        releaseRules: [
-          {
-            type: "chore",
-            scope: "deps",
-            subject: "*marked-annotated-hexdump*",
-            release: "minor",
-          },
-        ],
-        parserOpts: {
-          noteKeywords: ["BREAKING CHANGE", "BREAKING CHANGES"],
-        },
-      },
-    ],
+    "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
       "@semantic-release/changelog",
