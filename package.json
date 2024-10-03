@@ -2,7 +2,7 @@
   "name": "multimarkdown-tables-vsc",
   "displayName": "Multimarkdown tables for VSCode",
   "description": "Adds previews for Multimarkdown tables",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "EdwardWoolhouse",
   "license": "MIT",
   "keywords": [
