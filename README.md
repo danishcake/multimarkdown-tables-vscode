@@ -1,4 +1,4 @@
-# md-annotated-hexdumps README
+# Multimarkdown tables for VS Code
 
 Adds support for multimark tables, driven by the the [markdown-it-multimd-table](https://www.npmjs.com/package/markdown-it-multimd-table) library.
 This allows you to add complex tables, with spanned rows and columns, or define tables over multiple rows.
